@@ -28,7 +28,7 @@ The project consists of 3 components: <a href="#gateway">Gateway</a>, <a href="#
   - Create 4 feeds, each will get data of Confirmed case, death, people full vaccinated and partially vaccinated, and an additional feed for the mode.
 
 ## Android application
-<img align="right" src="img/Screenshot0.png" width="153.3px" height="280px"><img align="right" src="img/Screenshot1.png" width="153.3px" height="280px">
+<img align="right" src="img/Screenshot0.png" width="153.2px" height="280px"><img align="right" src="img/Screenshot1.png" width="153.2px" height="280px">
 
   - Receive data published previously on Adafruit IO server by the Gateway.
   - Switch button used to display current mode.
