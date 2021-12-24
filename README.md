@@ -10,9 +10,9 @@ The project consists of 3 components: <a href="#gateway">Gateway</a>, <a href="#
 
 ## Gateway
   - Use Python for implementation.
-  - Import Adafruit IO library for connecting and subscribing to [Adafruit IO](https://io.adafruit.com/) server with MQTT protocol.
+  - Import `Adafruit IO` library for connecting and subscribing to [Adafruit IO](https://io.adafruit.com/) server with MQTT protocol.
   - Establish serial connection to gateway with [com0com](http://com0com.sourceforge.net/) and hercules application.
-  - Import requests library for fetching JSON API to get [Covid-19 stats](https://github.com/M-Media-Group/Covid-19-API) and then publish to Adafruit IO server.
+  - Import `requests` library for fetching JSON API to get [Covid-19 stats](https://github.com/M-Media-Group/Covid-19-API) and then publish to Adafruit IO server.
   - Proccess data transmitted by hercules in format `!MODE:0##` for mode 0 (reading cases data) and `!MODE:1##` for mode 1 (reading vaccination data).
 
 ## Server
