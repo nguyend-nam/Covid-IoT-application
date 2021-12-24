@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/backTemperature"
+        android:layout_width="146dp"
+        android:layout_height="95dp"
+        android:gravity="center"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTemperature"
+
+        app:layout_heightPercent="25%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="100%" />
+
+    <TextView
+        android:id="@+id/nameTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="Confirmed Cases"
+        android:textColor="#181528"
+        android:elevation="14dp"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTemperature"
+
+        app:layout_heightPercent="8%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="100%" />
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#181528"
+
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="100%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="16%" />
+
+
+    <TextView
+        android:id="@+id/backHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#181528"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTemperature"
+
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="100%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="30%" />
+    <TextView
+        android:id="@+id/nameHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="Deaths"
+        android:textColor="#181528"
+        android:elevation="10dp"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTemperature"
+
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="30%" />
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#181528"
+
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="100%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="41%" />
+
+    <TextView
+        android:id="@+id/modectn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#181528"
+        android:background="@drawable/modebackground"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_heightPercent="22%"
+        app:layout_widthPercent="94%"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginTopPercent="66%" />
+    <ToggleButton
+        android:id="@+id/BtnLED"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/toggle_selector"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="23%"
+        app:layout_marginLeftPercent="38.5%"
+        app:layout_marginTopPercent="70.5%" />
+    <TextView
+        android:id="@+id/mode1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Cases"
+        android:textColor="#181528"
+
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="35.5%"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginTopPercent="73%" />
+    <ImageView
+        android:src="@drawable/icon_home"
+
+        android:id="@+id/iconHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="8%"
+        app:layout_marginLeftPercent="17%"
+        app:layout_marginTopPercent="69%" />
+    <TextView
+        android:id="@+id/mode2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Vaccines"
+        android:textColor="#181528"
+
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="35.5%"
+        app:layout_marginLeftPercent="61.5%"
+        app:layout_marginTopPercent="73%" />
+    <ImageView
+        android:src="@drawable/icon_info"
+
+        android:id="@+id/iconInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="8%"
+        app:layout_marginLeftPercent="75%"
+        app:layout_marginTopPercent="69%" />
+
+<!--    <com.github.ybq.android.spinkit.SpinKitView-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/spin_kit"-->
+<!--        style="@style/SpinKitView.Small.DoubleBounce"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        app:SpinKit_Color="@color/colorAccent"-->
+
+<!--        app:layout_marginLeftPercent="35%"-->
+<!--        app:layout_marginTopPercent="46%"-->
+<!--        app:layout_widthPercent="30%"-->
+<!--        app:layout_heightPercent="10%" />-->
+
+    <ImageView
+        android:src="@drawable/logo_hcmut"
+
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="9%"
+        app:layout_marginTopPercent="90%"
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="8%" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Vietnam Covid-19 stats"
+        android:textColor="#181528"
+
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTemperature"
+
+        app:layout_marginLeftPercent="25%"
+        app:layout_marginTopPercent="90%"
+        app:layout_widthPercent="67%"
+        app:layout_heightPercent="8%" />
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
