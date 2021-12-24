@@ -1,5 +1,6 @@
-> code skeleton IoT functions: [nhanksd85](https://github.com/nhanksd85)
+> code skeleton: [nhanksd85](https://github.com/nhanksd85)\
 > application idea and modify: [Dinh Nam Nguyen](https://github.com/NguyenD-Nam)
+<br>
 
 The python source includes:
 - Importing Adafruit IO library for connecting and subscribing to [Adafruit IO server](https://io.adafruit.com/) with MQTT protocol.
