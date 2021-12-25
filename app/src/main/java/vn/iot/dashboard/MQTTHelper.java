@@ -24,11 +24,11 @@ public class MQTTHelper {
 
 
     private String clientId = "";
-    final String subscriptionTopic = "Namnguyen22/f/+";
+    final String subscriptionTopic = ""; # Username/f/+ for subscribing to all feeds
 
 
-    final String username = "Namnguyen22";
-    final String password = "aio_FzsM476O6ZsmWTTU9RzxP8jIEvEi";
+    final String username = "";
+    final String password = "";
 
     public MqttAndroidClient mqttAndroidClient;
 
