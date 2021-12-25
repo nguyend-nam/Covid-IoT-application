@@ -40,19 +40,13 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b){
                     Log.d("mqtt", "Button is ON");
-                    //sendDataMQTT("Namnguyen22/feeds/bbc-temp", "32");
 //                    ---------------------------------------------------
-                    sendDataMQTT("Namnguyen22/feeds/bbc-led", "1");
-//                    sendDataMQTT("Namnguyen22/feeds/bbc-temp", "980000");
-//                    sendDataMQTT("Namnguyen22/feeds/bbc-temp-1", "22000");
+                    sendDataMQTT("Username/feeds/feed-id-for-button", "1");
 //                    ---------------------------------------------------
                 } else {
                     Log.d("mqtt", "Button is OFF");
-                    //sendDataMQTT("Namnguyen22/feeds/bbc-temp", "0");
 //                    ---------------------------------------------------
-                    sendDataMQTT("Namnguyen22/feeds/bbc-led", "0");
-//                    sendDataMQTT("Namnguyen22/feeds/bbc-humid", "28000000");
-//                    sendDataMQTT("Namnguyen22/feeds/bbc-humid-1", "60000000");
+                    sendDataMQTT("Username/feeds/feed-id-for-button", "0");
 //                    ---------------------------------------------------
                 }
             }
@@ -102,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startMQTT(){
-        mqttHelper = new MQTTHelper(getApplicationContext(), "123456789");
+        mqttHelper = new MQTTHelper(getApplicationContext(), ""); // client, can be "12345..."
         mqttHelper.setCallback(new MqttCallbackExtended(){
             @Override
             public void connectComplete(boolean reconnect, String serverURI) {
@@ -122,15 +116,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
                 Log.d("mqtt", "Received: " + message.toString());
-//                if(topic.contains("bbc-temp")){
-//                    Log.d("mqtt", "Received Temp: " + message.toString());
-//                    txtTemp.setText(message.toString());
-//                }
-//                if(topic.contains("bbc-humid")){
-//                    Log.d("mqtt", "Received Humid: " + message.toString());
-//                    txtHumid.setText(message.toString());
-//                }
-                if(topic.contains("bbc-led")){
+                if(topic.contains("feed-id-for-button")){
                     Log.d("mqtt", "Received LED: " + message.toString());
                     if(message.toString().equals("0")){
                         BtnLED.setChecked(false);
@@ -145,12 +131,12 @@ public class MainActivity extends AppCompatActivity {
                     tmp = Integer.parseInt(message.toString());
                     nameTemp.setText("Confirmed Cases");
                     nameHumid.setText("Deaths");
-                    if (topic.contains("bbc-temp-1")) {
+                    if (topic.contains("feed-id-for-deaths")) {
                         Log.d("mqtt", "Received Temp: " + message.toString());
                         if(tmp <= 900000)
                             txtHumid.setText(message.toString());
                     }
-                    else if (topic.contains("bbc-temp")) {
+                    else if (topic.contains("feed-id-for-cases")) {
                         Log.d("mqtt", "Received Temp: " + message.toString());
                         if(tmp > 900000)
                             txtTemp.setText(message.toString());
@@ -160,12 +146,12 @@ public class MainActivity extends AppCompatActivity {
                     tmp = Integer.parseInt(message.toString());
                     nameTemp.setText("Fully Vaccinated");
                     nameHumid.setText("Partially Vaccinated");
-                    if (topic.contains("bbc-humid-1")) {
+                    if (topic.contains("feed-id-for-partially")) {
                         Log.d("mqtt", "Received Humid: " + message.toString());
                         if(tmp >= 60000000)
                             txtHumid.setText(message.toString());
                     }
-                    else if (topic.contains("bbc-humid")) {
+                    else if (topic.contains("feed-id-for-fully")) {
                         Log.d("mqtt", "Received Humid: " + message.toString());
                         if(tmp < 60000000)
                             txtTemp.setText(message.toString());
