@@ -36,3 +36,4 @@ The project consists of 3 components: <a href="#gateway">Gateway</a>, <a href="#
   - Otherwise, change the content of 2 `TextView` to *Fully vaccinated* and *Partially vaccinated*.
   - Layout can be found at `app\src\main\res`.
   - Java source for main activity and MQTT protocol can be found at `app\src\main\java\vn\iot\dashboard`.
+  - Fill in the `username`, `feed-id` and `Adafruit api key` in the Java source to start working with Android application.
