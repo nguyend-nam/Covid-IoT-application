@@ -24,7 +24,7 @@ public class MQTTHelper {
 
 
     private String clientId = "";
-    final String subscriptionTopic = ""; # Username/f/+ for subscribing to all feeds
+    final String subscriptionTopic = ""; #// Username/f/+ for subscribing to all feeds
 
 
     final String username = "";
