@@ -5,16 +5,12 @@ import requests
 # https://iot.stackexchange.com/questions/4167/how-to-send-data-to-thingsboard-using-mqtt-in-python
 # https://bytesofgigabytes.com/thingsboard/sending-data-to-thingsboard-using-python/
 print("Paho MQTT")
-import paho.mqtt.client as mqttclient
-import time
-import json
-from random import randrange
 
 syn = True
 
 BROKER_ADDRESS = "demo.thingsboard.io"
 PORT = 1883
-THINGS_BOARD_ACCESS_TOKEN = "ElcBCl68FmJdOcQ9BvFC"
+THINGS_BOARD_ACCESS_TOKEN = ""
 
 def subscribed(client, userdata, mid, granted_qos):
     print("Subscribed...")
@@ -37,7 +33,7 @@ def  connected(client, usedata, flags, rc):
     else:
         print("Connection is failed")
 
-client = mqttclient.Client("Gateway_Thingsboard")
+client = mqttclient.Client("")
 client.username_pw_set(THINGS_BOARD_ACCESS_TOKEN)
 
 client.on_connect = connected
