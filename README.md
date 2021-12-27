@@ -1,6 +1,6 @@
 # Covid-19 IoT application
 
-> Android application for my study in ***Internet of Things Application Development*** course (*CO3037*) at Ho Chi Minh university of Technology.
+> Android application showing Covid-19 stats in Vietnam for my study in ***Internet of Things Application Development*** course (*CO3037*) at Ho Chi Minh university of Technology.
 
 <br>
 
