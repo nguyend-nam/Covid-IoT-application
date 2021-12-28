@@ -18,7 +18,7 @@ The project consists of 3 components: <a href="#gateway">Gateway</a>, <a href="#
 
 ## Server
 <div align="center">
-  <img src="img/db1.png" height="230px"> <img src="img/db0.png" height="230px">
+  <img src="img/db1.png" width="400px"> <img src="img/db0.png" width="400px">
   <br>
   <i>Two dashboards for each mode</i>
 </div>
