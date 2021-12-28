@@ -9,11 +9,12 @@
 The project consists of 3 components: <a href="#gateway">Gateway</a>, <a href="#server">Server</a> and <a href="#android-application">Android application</a>, implemented separately and connected using **MQTT** protocol. The project's code skeleton was implemented by my tutor in the course, Dr. Le Trong Nhan (GitHub: [nhanksd](https://github.com/nhanksd85)).
 
 ## Gateway
+
   - Use Python for implementation.
   - Import `Adafruit IO` library for connecting and subscribing to [Adafruit IO](https://io.adafruit.com/) server with MQTT protocol.
   - Establish serial connection to gateway with [com0com](http://com0com.sourceforge.net/) and hercules application.
   - Import `requests` library for fetching JSON API to get [Covid-19 stats](https://github.com/M-Media-Group/Covid-19-API) and then publish to Adafruit IO server.
-  - Proccess data transmitted by hercules in format `!MODE:0##` for mode 0 (reading cases data) and `!MODE:1##` for mode 1 (reading vaccination data).
+  - Process data transmitted by hercules in format `!MODE:0##` for mode 0 (reading cases data) and `!MODE:1##` for mode 1 (reading vaccination data).
   - (*Optional*) Work with ThingsBoard server using PAHO MQTT.
 
 ## Server
@@ -29,7 +30,7 @@ The project consists of 3 components: <a href="#gateway">Gateway</a>, <a href="#
   - Create 4 feeds, each will get data of Confirmed case, death, people full vaccinated and partially vaccinated, and an additional feed for the mode.
 
 ## Android application
-<img align="right" src="img/Screenshot0.png" width="153.15px" height="280px"><img align="right" src="img/Screenshot1.png" width="153.15px" height="280px">
+<img align="right" src="img/Screenshot.png" width="350px">
 
   - Receive data published previously on Adafruit IO server by the Gateway.
   - Switch button used to display current mode.
