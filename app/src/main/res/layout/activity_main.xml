@@ -21,7 +21,7 @@
 
         app:layout_heightPercent="25%"
         app:layout_marginLeftPercent="0%"
-        app:layout_marginTopPercent="5%"
+        app:layout_marginTopPercent="2%"
         app:layout_widthPercent="100%" />
 
     <TextView
@@ -41,7 +41,7 @@
 
         app:layout_heightPercent="8%"
         app:layout_marginLeftPercent="0%"
-        app:layout_marginTopPercent="5%"
+        app:layout_marginTopPercent="2%"
         app:layout_widthPercent="100%" />
 
     <TextView
@@ -60,7 +60,7 @@
         app:layout_heightPercent="11%"
         app:layout_widthPercent="100%"
         app:layout_marginLeftPercent="0%"
-        app:layout_marginTopPercent="16%" />
+        app:layout_marginTopPercent="13%" />
 
 
     <TextView
@@ -78,7 +78,7 @@
         app:layout_heightPercent="25%"
         app:layout_widthPercent="100%"
         app:layout_marginLeftPercent="0%"
-        app:layout_marginTopPercent="30%" />
+        app:layout_marginTopPercent="27%" />
     <TextView
         android:id="@+id/nameHumidity"
         android:layout_width="match_parent"
@@ -97,7 +97,7 @@
         app:layout_heightPercent="8%"
         app:layout_widthPercent="100%"
         app:layout_marginLeftPercent="0%"
-        app:layout_marginTopPercent="30%" />
+        app:layout_marginTopPercent="27%" />
     <TextView
         android:id="@+id/txtHumidity"
         android:layout_width="match_parent"
@@ -114,7 +114,7 @@
         app:layout_heightPercent="11%"
         app:layout_widthPercent="100%"
         app:layout_marginLeftPercent="0%"
-        app:layout_marginTopPercent="41%" />
+        app:layout_marginTopPercent="38%" />
 
     <TextView
         android:id="@+id/modectn"
@@ -128,10 +128,10 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_heightPercent="22%"
+        app:layout_heightPercent="24%"
         app:layout_widthPercent="94%"
         app:layout_marginLeftPercent="3%"
-        app:layout_marginTopPercent="66%" />
+        app:layout_marginTopPercent="61.5%" />
     <ToggleButton
         android:id="@+id/BtnLED"
         android:layout_width="match_parent"
@@ -147,7 +147,7 @@
         app:layout_heightPercent="9%"
         app:layout_widthPercent="23%"
         app:layout_marginLeftPercent="38.5%"
-        app:layout_marginTopPercent="70.5%" />
+        app:layout_marginTopPercent="66.5%" />
     <TextView
         android:id="@+id/mode1"
         android:layout_width="match_parent"
@@ -163,7 +163,7 @@
         app:layout_heightPercent="9%"
         app:layout_widthPercent="35.5%"
         app:layout_marginLeftPercent="3%"
-        app:layout_marginTopPercent="73%" />
+        app:layout_marginTopPercent="69%" />
     <ImageView
         android:src="@drawable/icon_home"
 
@@ -173,7 +173,7 @@
         app:layout_heightPercent="8%"
         app:layout_widthPercent="8%"
         app:layout_marginLeftPercent="17%"
-        app:layout_marginTopPercent="69%" />
+        app:layout_marginTopPercent="65%" />
     <TextView
         android:id="@+id/mode2"
         android:layout_width="match_parent"
@@ -189,7 +189,7 @@
         app:layout_heightPercent="9%"
         app:layout_widthPercent="35.5%"
         app:layout_marginLeftPercent="61.5%"
-        app:layout_marginTopPercent="73%" />
+        app:layout_marginTopPercent="69%" />
     <ImageView
         android:src="@drawable/icon_info"
 
@@ -199,7 +199,7 @@
         app:layout_heightPercent="8%"
         app:layout_widthPercent="8%"
         app:layout_marginLeftPercent="75%"
-        app:layout_marginTopPercent="69%" />
+        app:layout_marginTopPercent="65%" />
 
 <!--    <com.github.ybq.android.spinkit.SpinKitView-->
 <!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
@@ -223,23 +223,23 @@
         android:layout_height="match_parent"
         app:layout_marginLeftPercent="9%"
         app:layout_marginTopPercent="90%"
-        app:layout_widthPercent="15%"
+        app:layout_widthPercent="12%"
         app:layout_heightPercent="8%" />
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="Vietnam Covid-19 stats"
+        android:text="HCMUT CSE department"
         android:textColor="#181528"
 
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtTemperature"
 
-        app:layout_marginLeftPercent="25%"
+        app:layout_marginLeftPercent="22.5%"
         app:layout_marginTopPercent="90%"
-        app:layout_widthPercent="67%"
+        app:layout_widthPercent="70%"
         app:layout_heightPercent="8%" />
 
 </androidx.percentlayout.widget.PercentRelativeLayout>
